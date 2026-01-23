@@ -1,0 +1,50 @@
+/* ========== BU CSS değiştirilebilir, ana css dosyasıdır. Kodlar geçici olarak yazılmıştır.  ========== */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* ========== NAVBAR ========== */
+header {
+  background-color: #0b3c5d;
+}
+
+nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #0b3c5d;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
