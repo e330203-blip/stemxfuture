@@ -8,6 +8,7 @@
 </head>
 <body>
 
+  <!--bu kisma dokunulmayacak websitenin structure bu sekilde-->
   <header>
     <nav>
       <a href="index.html">Home</a>
@@ -22,25 +23,41 @@
     <h1>Education</h1>
     <p>Explore our STEM learning resources and educational content. Learn new things with the content our volunteers have prepared for you!</p>
 
+    <!--bu bölümde ekranda dört temel kutucuk (science, technology, engineering, mathematics) olması ve üzerine basılınca (yeni bir buton eklenebilir ya da <a></a> kullanarak link eleyebilirsiniz size kalmış :) ) o konuyla ilgili içeriklere yönlendirmesini (içerikler pdf olarak eklenecektir) bu sebeple açılan her bir kategoride bulunan pdf content için bir link olmalı. Bu pdflerin tanıtımı için örnek format(science kategorisi açıldıktan sonra bir içeriğe tıklayınca açılacak contentlerden her biri için örnek format):
+
+    <div class="education-content">
+      <h2>Science in High School</h2>
+      <img src="#.jpg" alt="Science in High School">     (img daha sonra eklenecek)
+      <p>Basic concepts, experiments, and real-world science applications. </p>
+      <button class="download-pdf">Download PDF</button>
+    </div>
+    
+    sayfada bu formatta her bir pdf content için bir bölüm olacak ve bu bölümlerin hepsi style.css dosyasında güzel bir arayüze sahip olacak. Ayrıca bu pdf download butonlarının çalıştığından emin olmalıyız. web sitenin sayfalarındaki uyumu sağlamak adına grupta paylaşılacak renk paleti gibi kurallara uyulduğundan emin olun.
+    
+    -->
     <section class="education-list">
       <div class="education-item">
         <h2>Science</h2>
-        <p>Basic concepts, experiments, and real-world science applications. </p>
+        <img src="#.jpg" alt="Science">     <!--img daha sonra eklenecek-->
+        <p>Basic concepts, experiments, and real-world science applications. Click here for more content.</p>
       </div>
 
       <div class="education-item">
         <h2>Technology</h2>
-        <p>Introduction to coding, digital tools, and modern technologies.</p>
+        <img src="#.jpg" alt="Technology">     <!--img daha sonra eklenecek-->
+        <p>Introduction to coding, digital tools, and modern technologies. Click here for more content.</p>
       </div>
 
       <div class="education-item">
         <h2>Engineering</h2>
-        <p>Problem-solving, design thinking, and engineering challenges.</p>
+        <img src="#.jpg" alt="Engineering">     <!--img daha sonra eklenecek-->
+        <p>Problem-solving, design thinking, and engineering challenges. Click here for more content.</p>
       </div>
 
       <div class="education-item">
         <h2>Mathematics</h2>
-        <p>Logical thinking, fundamentals, and practical math skills.</p>
+        <img src="#.jpg" alt="Mathematics">     <!--img daha sonra eklenecek-->
+        <p>Logical thinking, fundamentals, and practical math skills. Click here for more content.</p>
       </div>
     </section>
   </main>
