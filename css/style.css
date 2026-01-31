@@ -1,26 +1,58 @@
 /* ========== BU CSS değiştirilebilir, ana css dosyasıdır. Kodlar geçici olarak yazılmıştır.  ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f9f9f9;
   color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 main {
   padding: 40px 20px;
   max-width: 1000px;
   margin: 0 auto;
+  min-height: calc(100vh - 250px);
 }
 
 h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #0b3c5d;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  color: #0b3c5d;
 }
 
 p {
   margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 /* ========== NAVBAR ========== */
 header {
   background-color: #0b3c5d;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -29,14 +61,19 @@ nav {
   padding: 15px 20px;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: white;
   font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 nav a:hover {
+  opacity: 0.8;
   text-decoration: underline;
 }
 
@@ -45,6 +82,221 @@ footer {
   background-color: #0b3c5d;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   margin-top: 40px;
+}
+
+/* ========== BLOG STYLES ========== */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #ddd;
+}
+
+.blog-card h2 {
+  padding: 20px 20px 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.blog-card p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.blog-read-more {
+  margin: 0 20px 20px;
+  padding: 10px 20px;
+  background-color: #0b3c5d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.blog-read-more:hover {
+  background-color: #092d47;
+}
+
+/* ========== EDUCATION STYLES ========== */
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.education-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.education-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: #ddd;
+}
+
+.education-item h2 {
+  padding: 20px 20px 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.education-item p {
+  padding: 0 20px;
+  margin-bottom: 0;
+}
+
+.education-content {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.education-content img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.download-pdf {
+  padding: 12px 24px;
+  background-color: #0b3c5d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.download-pdf:hover {
+  background-color: #092d47;
+}
+
+/* ========== VOLUNTEER STYLES ========== */
+.volunteer-reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.reason {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #0b3c5d;
+  transition: transform 0.3s ease;
+}
+
+.reason:hover {
+  transform: translateX(5px);
+}
+
+.reason h2 {
+  margin-top: 0;
+  font-size: 1.3em;
+}
+
+.volunteer-cta {
+  text-align: center;
+  background: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.volunteer-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #0b3c5d;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.volunteer-button:hover {
+  background-color: #092d47;
+  transform: scale(1.05);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 0.9em;
+  }
+
+  .blog-list,
+  .education-list,
+  .volunteer-reasons {
+    grid-template-columns: 1fr;
+  }
 }
