@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>STEMxFuture | Home</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -10,22 +11,59 @@
 
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="education.html">Education</a>
-      <a href="volunteer.html">Be Volunteer</a>
+      <a href="index.html" class="logo-wrapper">
+          <img src="assets/images/stemxfuture_logo.png" alt="STEMxFuture Logo" class="nav-logo">
+      </a>
+      
+      <div class="nav-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="education.html">Education</a>
+        <a href="volunteer.html">Be Volunteer</a>
+      </div>
     </nav>
   </header>
-<!--
-bu sayfanın tamamen tasarlanması grekli. ana sayfa olarak ziyaretçilerin ilgisini çekmesi önemli.
-ayrıca footer kısmı sabit kalacak şekilde düzenlensin. aşağıya scroll oldukça sırasıyla about.html, blog.html,
-education.html ve volunteer.html sayfalarına ait kısa tanıtımlar eklenebilir ya da aşağı kaydırma durumunda direkt olarak o sayfalardan devam edilebilir.
-ama tasarım açısından çekici ve modern bir arayüz olmalı.
-  -->
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Empowering Future with STEM</h1>
+        <p>Accessible education for everyone, everywhere. Join our global student-led movement.</p>
+        <div class="hero-buttons">
+            <a href="about.html" class="btn btn-primary">Who We Are</a>
+            <a href="volunteer.html" class="btn btn-outline">Join Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      
+      <div class="feature-card">
+        <h3>Education First</h3>
+        <p>Explore our curated learning materials and resources.</p>
+        <a href="education.html" class="link-arrow">Go to Education &rarr;</a>
+      </div>
+
+      <div class="feature-card">
+        <h3>Read Our Blog</h3>
+        <p>Stories, updates and experiences from our volunteers.</p>
+        <a href="blog.html" class="link-arrow">Read Articles &rarr;</a>
+      </div>
+
+      <div class="feature-card highlight-card">
+        <h3>Volunteer With Us</h3>
+        <p>Make a real impact. Become part of the STEMxFuture family.</p>
+        <a href="volunteer.html" class="link-arrow">Apply Now &rarr;</a>
+      </div>
+
+    </section>
+  </main>
   
   <footer>
-    <p>© 2026 STEMxFuture</p>
+    <div class="footer-container">
+      <p>© 2026 STEMxFuture. All Rights Reserved.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

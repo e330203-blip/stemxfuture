@@ -300,3 +300,292 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* ========================================= */
+/* SEDAT - INDEX SAYFASI TASARIMLAR */
+/* ========================================= */
+
+/* --- Navbar Duzenlemesi --- */
+nav {
+    display: flex;
+    justify-content: space-between; /* logo sola, menu grubu saga yapissin */
+    align-items: center; /* dikeyde ortali olsun */
+    padding: 10px 0; /* ustten alttan hafif bosluk */
+    height: 90px; /* navbar yuksekligi sabit olsun kayma yapmasin */
+}
+
+/* Logo Ayarlari */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 65px; /* logo boyutu ideal, cok kucuk degil */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05); /* logoya gelince hafif buyusun */
+}
+
+/* Link Grubu (Sag Taraf) */
+.nav-menu {
+    display: flex;
+    gap: 30px; /* linkler birbirine girmesin, arasi acik olsun */
+    align-items: center;
+}
+
+/* Linklerin Kendisi */
+nav a {
+    color: white; /* yazi rengi */
+    font-size: 1.05rem; /* fontu bi tik buyuttum okunsun */
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 5px; /* alt cizgi icin yer actim */
+    transition: opacity 0.3s ease;
+}
+
+/* Aktif sayfa cizgisi */
+.active {
+    border-bottom: 3px solid #79C7FF; /* logodaki açık mavi renkten cizgi cektim */
+    opacity: 1 !important;
+}
+
+/* --- Hero Section (Giris Ekrani) --- */
+.hero-section {
+    background-color: #0b3c5d;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 0 0 40px 40px;
+    margin-bottom: 50px;
+    /* icerik dikeyde ortali dursun diye flex verdim */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Butonlar */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 14px 35px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #0b3c5d;
+}
+
+.btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: #0b3c5d;
+    transform: translateY(-2px);
+}
+
+/* --- Kartlar (Feature Cards) --- */
+.features-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.highlight-card {
+    border-left: 5px solid #0b3c5d;
+}
+
+.feature-card h3 {
+    color: #0b3c5d;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.link-arrow {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0b3c5d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-arrow:hover {
+    text-decoration: underline;
+    margin-left: 5px; /* hoverda hafif saga kaysın */
+    transition: margin 0.3s ease;
+}
+
+/* ========================================= */
+/* SEDAT - VOLUNTEER SAYFASI TASARIMLAR */
+/* ========================================= */
+
+.page-hero {
+    background-color: #f4f8fb;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.page-hero h1 {
+    color: #0b3c5d;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.reasons-section {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    color: #0b3c5d;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.reason-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border-top: 4px solid #0b3c5d;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ececec; /* griyi biraz açtım, arka planda dursun */
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    line-height: 1;
+    z-index: 0;
+}
+
+.reason-card h3, .reason-card p {
+    position: relative;
+    z-index: 1; /* yazi numaranin ustune çıksın */
+}
+
+.cta-section {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.cta-box {
+    background-color: #0b3c5d;
+    color: white;
+    padding: 60px 40px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(11, 60, 93, 0.2);
+}
+
+.cta-box h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 45px;
+    background-color: white;
+    color: #0b3c5d;
+    font-weight: bold;
+    border-radius: 50px; /* butonu yuvarladim */
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+}
