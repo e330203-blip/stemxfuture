@@ -16,10 +16,10 @@
       </a>
       
       <div class="nav-menu">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="education.html">Education</a>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="blog.html" >Blog</a>
+        <a href="education.html" >Education</a>
         <a href="volunteer.html">Be Volunteer</a>
       </div>
     </nav>
@@ -109,6 +109,16 @@
   </footer>
 
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js">
+    const links = document.querySelectorAll(".nav-menu a");
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+     }
+    });
+  </script>
+  
 </body>
 </html>
