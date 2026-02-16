@@ -86,7 +86,40 @@ footer {
   margin-top: 40px;
 }
 
+/* =========ABOUT PAGE STYLES ========== */
+.about-stH1 {
+  font-size: 2.5rem;
+  color: #0b3c5d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-sections-head {
+  font-size: 1.8rem;
+  color: #0b3c5d;
+  margin-bottom: 15px;
+}
+
+.space {
+  height: 60px;
+}
+
 /* ========== BLOG STYLES ========== */
+
+.blog-head {
+  font-size: 2.5rem;
+  color: #0b3c5d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.blogHeader {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
 .blog-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
