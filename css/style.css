@@ -337,6 +337,14 @@ footer {
 }
 
 /* ========== EDUCATION STYLES ========== */
+
+.aciklama-section {
+  text-align: center;
+  max-width: 800px;
+  color:#051e2e;
+  margin: 0 auto 40px auto;
+}
+
 .education-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
