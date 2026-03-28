@@ -74,7 +74,6 @@ nav a {
 
 nav a:hover {
   opacity: 0.8;
-  text-decoration: underline;
 }
 
 /* ========== FOOTER ========== */
@@ -873,4 +872,359 @@ nav a:not(.logo-wrapper):hover::after { width: 100%; }
 .cta-btn:hover {
   transform: translateY(-5px) scale(1.02);
   background-color: #f8fafc;
+}
+
+/* ========== BLOG CARD ENHANCEMENTS ========== */
+
+.blog-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px 0;
+}
+
+.blog-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  background: #e8f4fd;
+  color: #0b3c5d;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.blog-date {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.blog-card h2 {
+  padding: 8px 20px 5px;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.blog-author {
+  padding: 0 20px 6px;
+  font-size: 0.85rem;
+  color: #64748b;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.blog-excerpt {
+  padding: 0 20px;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: #475569;
+  margin-bottom: 0;
+}
+
+.blog-actions {
+  display: flex;
+  gap: 8px;
+  padding: 16px 20px 20px;
+  margin-top: auto;
+}
+
+.blog-view-btn {
+  flex: 1;
+  padding: 10px 14px;
+  background-color: #0b3c5d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.blog-view-btn:hover {
+  background-color: #092d47;
+  text-decoration: none;
+}
+
+.blog-download-btn {
+  padding: 10px 14px;
+  background-color: transparent;
+  color: #0b3c5d;
+  border: 2px solid #0b3c5d;
+  border-radius: 6px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.blog-download-btn:hover {
+  background-color: #0b3c5d;
+  color: white;
+}
+
+/* ========== EDUCATION PAPERS ========== */
+
+.papers-section {
+  margin-top: 70px;
+  padding-top: 50px;
+  border-top: 2px solid #e2e8f0;
+}
+
+.papers-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.papers-header h2 {
+  font-size: 2rem;
+  color: #0b3c5d;
+  margin-bottom: 10px;
+}
+
+.papers-header p {
+  color: #64748b;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.paper-card {
+  background: white;
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(11, 60, 93, 0.07);
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid #0b3c5d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paper-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(11, 60, 93, 0.12);
+}
+
+.paper-card h3 {
+  font-size: 1.05rem;
+  color: #0b3c5d;
+  margin-bottom: 12px;
+  line-height: 1.45;
+}
+
+.paper-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.paper-author {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.paper-date {
+  font-size: 0.76rem;
+  color: #94a3b8;
+}
+
+.paper-description {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.65;
+  flex-grow: 1;
+  margin-bottom: 22px;
+}
+
+.paper-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.paper-view-btn,
+.paper-download-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.paper-view-btn {
+  background: #0b3c5d;
+  color: white;
+}
+
+.paper-view-btn:hover {
+  background: #092d47;
+  text-decoration: none;
+}
+
+.paper-download-btn {
+  background: transparent;
+  color: #0b3c5d;
+  border: 2px solid #0b3c5d;
+}
+
+.paper-download-btn:hover {
+  background: #0b3c5d;
+  color: white;
+  text-decoration: none;
+}
+
+/* ========== TEAM CONTRIBUTORS ========== */
+
+.contributors-section {
+  margin-bottom: 80px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.team-member-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px 14px 16px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(11, 60, 93, 0.07);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(11, 60, 93, 0.13);
+}
+
+.team-initials {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0b3c5d 0%, #1a6fa3 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  letter-spacing: 0.5px;
+}
+
+.team-country {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+  display: block;
+}
+
+/* ========== JOIN OUR TEAM SECTION ========== */
+
+.join-team-section {
+  background: white;
+  border-radius: 24px;
+  padding: 50px 45px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  margin: 60px auto 0;
+  max-width: 900px;
+}
+
+.join-team-section h2 {
+  color: #0b3c5d;
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.join-team-section p {
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+.join-team-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.join-badge {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.badge-intern {
+  background: #e8f4fd;
+  color: #0b3c5d;
+  border: 1px solid #c3dff5;
+}
+
+.badge-volunteer {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.join-team-cta {
+  display: inline-block;
+  padding: 16px 50px;
+  background: linear-gradient(120deg, #0b3c5d 0%, #051e2e 100%);
+  color: white;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(11, 60, 93, 0.25);
+}
+
+.join-team-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(11, 60, 93, 0.35);
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  }
+
+  .join-team-section {
+    padding: 35px 25px;
+  }
+
+  .papers-grid {
+    grid-template-columns: 1fr;
+  }
 }

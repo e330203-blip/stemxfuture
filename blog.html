@@ -2,103 +2,329 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>STEMxFuture | Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!--bu kisma dokunulmayacak websitenin structure bu sekilde-->
   <header>
     <nav>
       <a href="blog.html" class="logo-wrapper">
-          <img src="assets/images/stemxfuture_logo.png" alt="STEMxFuture Logo" class="nav-logo">
+        <img src="assets/images/stemxfuture_logo.png" alt="STEMxFuture Logo" class="nav-logo">
       </a>
-      
       <div class="nav-menu">
-        <a href="index.html" >Home</a>
-        <a href="about.html" >About</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="blog.html" class="active">Blog</a>
-        <a href="education.html" >Education</a>
-        <a href="volunteer.html" >Be Volunteer</a>
+        <a href="education.html">Education</a>
+        <a href="volunteer.html">Be Volunteer</a>
       </div>
     </nav>
   </header>
 
   <main>
     <h1 class="blog-head">STEMxFuture Blog</h1>
-    <p class="blogHeader">Insights, stories, and updates from our STEM community. Our volunteers are working to make their voices heard... 
-      <br>
+    <p class="blogHeader">
+      Insights, stories, and updates from our STEM community. Our volunteers are working to make their voices heard...<br>
       Start reading now or join us and make your voice heard!
     </p>
 
-    <!--bu bloglar bir örnektir, gerçek bloglar yazıldıktan sonra eklenecektir. Ama güzel bir arayüze ve tasarıma (style.css dosyasında) ihtiyacı var. Ayrıca read more buttonlarının çalıştığından emin olmalıyız. web sitenin sayfalarındaki uyumu sağlamak adına grupta paylaşılacak renk paleti gibi kurallara uyulduğundan emin olun.-->
     <section class="blog-list">
+
+      <!-- 1 -->
       <article class="blog-card">
-        <h2>Why STEM Education Matters(example)</h2>
-        <!--img daha sonra eklenecek-->
-        <img src="#.jpg" alt="STEM Education">
-        <p>
-          STEM education equips students with critical thinking,
-          problem-solving, and innovation skills needed for the future.
-        </p>
-        <button class="blog-read-more">Read more</button>
+        <div class="blog-card-meta">
+          <span class="blog-tag">Science &amp; People</span>
+          <span class="blog-date">Mar 25, 2026</span>
+        </div>
+        <h2>Aziz Sancar</h2>
+        <p class="blog-author">by Pınar Sert</p>
+        <p class="blog-excerpt">The inspiring story of Aziz Sancar — from a small village in Mardin to a Nobel Prize in Chemistry for groundbreaking research on DNA repair mechanisms.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/aziz-sancar-pinar-sert.pdf" target="_blank" rel="noopener noreferrer" class="blog-view-btn">View PDF</a>
+          <a href="assets/blogs/aziz-sancar-pinar-sert.pdf" download class="blog-download-btn">↓</a>
+        </div>
       </article>
 
+      <!-- 2 -->
       <article class="blog-card">
-        <h2>Women in STEM: Breaking Barriers(example)</h2>
-        <!--img daha sonra eklenecek-->
-        <img src="#.jpg" alt="STEM Education">
-        <p>
-          Highlighting inspiring stories of women leading change
-          in science and technology fields.
-        </p>
-        <button class="blog-read-more">Read more</button>
+        <div class="blog-card-meta">
+          <span class="blog-tag">STEM &amp; Business</span>
+          <span class="blog-date">Mar 24, 2026</span>
+        </div>
+        <h2>STEM and Trust: Building Science-Based Brands</h2>
+        <p class="blog-author">by Asya Şahin</p>
+        <p class="blog-excerpt">How science-based thinking makes brands more credible. In a world where consumers demand authenticity, STEM is not just an advantage — it's a necessity.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/stem-trust-asya-sahin.pdf" target="_blank" rel="noopener noreferrer" class="blog-view-btn">View PDF</a>
+          <a href="assets/blogs/stem-trust-asya-sahin.pdf" download class="blog-download-btn">↓</a>
+        </div>
       </article>
 
+      <!-- 3 -->
       <article class="blog-card">
-        <h2>How to Get Started with Coding(example)</h2>
-        <!--img daha sonra eklenecek-->
-        <img src="#.jpg" alt="STEM Education">
-        <p>
-          A beginner-friendly guide to taking your first steps
-          into the world of programming.
-        </p>
-        <button class="blog-read-more">Read more</button>
+        <div class="blog-card-meta">
+          <span class="blog-tag">Science</span>
+          <span class="blog-date">Mar 24, 2026</span>
+        </div>
+        <h2>From Tragedy to Breakthrough</h2>
+        <p class="blog-author">by Hamd Minullah</p>
+        <p class="blog-excerpt">How some of history's greatest scientific discoveries were born not from ambition alone, but from tragedy — and the resilience of those who refused to give up.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/from-tragedy-hamd-minullah.docx" download class="blog-view-btn">Download</a>
+        </div>
       </article>
+
+      <!-- 4 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Innovation</span>
+          <span class="blog-date">Mar 24, 2026</span>
+        </div>
+        <h2>The Cost of Innovation</h2>
+        <p class="blog-author">by Hamd Minullah</p>
+        <p class="blog-excerpt">Progress always comes at a price. This blog explores the ethical, social, and economic costs that come alongside technological breakthroughs.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/cost-innovation-hamd-minullah.docx" download class="blog-view-btn">Download</a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Environment</span>
+          <span class="blog-date">Mar 24, 2026</span>
+        </div>
+        <h2>Losing Nature in the Digital World</h2>
+        <p class="blog-author">by Abdullah Oğuz</p>
+        <p class="blog-excerpt">As screens consume more of our time, our connection to nature fades. This blog examines how digital life is distancing us from the natural world — and what we can do about it.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/losing-nature-abdullah-oguz.pdf" target="_blank" rel="noopener noreferrer" class="blog-view-btn">View PDF</a>
+          <a href="assets/blogs/losing-nature-abdullah-oguz.pdf" download class="blog-download-btn">↓</a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Environment</span>
+          <span class="blog-date">Mar 24, 2026</span>
+        </div>
+        <h2>Connecting with Nature: Small Steps, Big Impact</h2>
+        <p class="blog-author">by Abdullah Oğuz</p>
+        <p class="blog-excerpt">Small, simple actions can rebuild our bond with nature. From mindful walks to growing a plant, reconnecting with the natural world starts with a single step.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/connecting-nature-abdullah-oguz.pdf" target="_blank" rel="noopener noreferrer" class="blog-view-btn">View PDF</a>
+          <a href="assets/blogs/connecting-nature-abdullah-oguz.pdf" download class="blog-download-btn">↓</a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Biology</span>
+          <span class="blog-date">Mar 23, 2026</span>
+        </div>
+        <h2>Is Evolution Still Happening?</h2>
+        <p class="blog-author">by Elif Eda Kesgin</p>
+        <p class="blog-excerpt">Evolution didn't stop with the dinosaurs. From antibiotic-resistant bacteria to city-dwelling animals, evolution is happening all around us — right now.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/evolution-elif-kesgin.pdf" target="_blank" rel="noopener noreferrer" class="blog-view-btn">View PDF</a>
+          <a href="assets/blogs/evolution-elif-kesgin.pdf" download class="blog-download-btn">↓</a>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Space</span>
+          <span class="blog-date">Mar 23, 2026</span>
+        </div>
+        <h2>Astronauts' Life in Space: 5 Surprising Facts</h2>
+        <p class="blog-author">by Elif Eda Kesgin</p>
+        <p class="blog-excerpt">Life in space is nothing like on Earth. From floating while you sleep to experiencing 16 sunrises a day — discover the extraordinary daily realities aboard the ISS.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/astronauts-elif-kesgin.pdf" target="_blank" rel="noopener noreferrer" class="blog-view-btn">View PDF</a>
+          <a href="assets/blogs/astronauts-elif-kesgin.pdf" download class="blog-download-btn">↓</a>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Technology</span>
+          <span class="blog-date">Mar 19, 2026</span>
+        </div>
+        <h2>How Does AI Actually Learn?</h2>
+        <p class="blog-author">by Muhammad Ali Waheed</p>
+        <p class="blog-excerpt">Machine learning sounds magical, but there's real science behind it. This blog breaks down how AI systems learn from data — in simple terms anyone can understand.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/ai-learning-waheed.docx" download class="blog-view-btn">Download</a>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Mathematics</span>
+          <span class="blog-date">Mar 19, 2026</span>
+        </div>
+        <h2>Where Did Number Theory Come From?</h2>
+        <p class="blog-author">by Muhammad Ali Waheed</p>
+        <p class="blog-excerpt">Numbers are fundamental to everything we know. But where did the formal study of numbers begin? A journey through the fascinating origins of number theory.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/number-theory-waheed.docx" download class="blog-view-btn">Download</a>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Environment</span>
+          <span class="blog-date">Mar 16, 2026</span>
+        </div>
+        <h2>Climate Change</h2>
+        <p class="blog-author">by Abdullah Oğuz</p>
+        <p class="blog-excerpt">An exploration of the causes, impacts, and urgent need for collective action on climate change — one of the most critical scientific challenges of our time.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/climate-change-abdullah-oguz.docx" download class="blog-view-btn">Download</a>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Science</span>
+          <span class="blog-date">Mar 15, 2026</span>
+        </div>
+        <h2>Blog Post by Ayşe Erva Uygun</h2>
+        <p class="blog-author">by Ayşe Erva Uygun</p>
+        <p class="blog-excerpt">A new post from our volunteer contributor Ayşe Erva Uygun exploring topics in STEM education and science communication.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/ayse-erva-uygun-blog.docx" download class="blog-view-btn">Download</a>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Science</span>
+          <span class="blog-date">Mar 14, 2026</span>
+        </div>
+        <h2>Can a Butterfly Flap Its Wings and Really Change the World?</h2>
+        <p class="blog-author">by Elif Eda Kesgin</p>
+        <p class="blog-excerpt">Chaos theory says small changes create large, unpredictable outcomes. From pandemic outbreaks to daily coffee decisions — the butterfly effect is everywhere.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/chaos-theory-elif-kesgin.pdf" target="_blank" rel="noopener noreferrer" class="blog-view-btn">View PDF</a>
+          <a href="assets/blogs/chaos-theory-elif-kesgin.pdf" download class="blog-download-btn">↓</a>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">STEM</span>
+          <span class="blog-date">Mar 14, 2026</span>
+        </div>
+        <h2>Simple Experiments: A Science Adventure at Home</h2>
+        <p class="blog-author">by Elif Eda Kesgin</p>
+        <p class="blog-excerpt">You don't need a lab to do science. With vinegar, baking soda, and a little curiosity, your kitchen counter can become your first great science adventure.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/stem-experiments-elif-kesgin.pdf" target="_blank" rel="noopener noreferrer" class="blog-view-btn">View PDF</a>
+          <a href="assets/blogs/stem-experiments-elif-kesgin.pdf" download class="blog-download-btn">↓</a>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Health &amp; Biology</span>
+          <span class="blog-date">Mar 13, 2026</span>
+        </div>
+        <h2>Do You Know PCOS?</h2>
+        <p class="blog-author">by Pınar Sert</p>
+        <p class="blog-excerpt">PCOS (Polycystic Ovary Syndrome) affects 1 in 10 women worldwide. This blog explains what it is, how it affects the body, symptoms, and what women should know.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/pcos-pinar-sert.pdf" target="_blank" rel="noopener noreferrer" class="blog-view-btn">View PDF</a>
+          <a href="assets/blogs/pcos-pinar-sert.pdf" download class="blog-download-btn">↓</a>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Biology</span>
+          <span class="blog-date">Mar 13, 2026</span>
+        </div>
+        <h2>Mitochondria and Chloroplasts: What Do They Share?</h2>
+        <p class="blog-author">by Pınar Sert</p>
+        <p class="blog-excerpt">These two organelles live in very different cells, but share remarkable features. Dive into the fascinating common ground between mitochondria and chloroplasts.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/mitochondria-pinar-sert.pdf" target="_blank" rel="noopener noreferrer" class="blog-view-btn">View PDF</a>
+          <a href="assets/blogs/mitochondria-pinar-sert.pdf" download class="blog-download-btn">↓</a>
+        </div>
+      </article>
+
+      <!-- 17 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Biotechnology</span>
+          <span class="blog-date">Mar 13, 2026</span>
+        </div>
+        <h2>Biohacking and Regulation</h2>
+        <p class="blog-author">by Hamd Minullah</p>
+        <p class="blog-excerpt">Biohacking is changing what it means to be human. But where is the line between personal freedom and public safety? An exploration of biohacking and its regulatory challenges.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/biohacking-hamd-minullah.docx" download class="blog-view-btn">Download</a>
+        </div>
+      </article>
+
+      <!-- 18 -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-tag">Science</span>
+          <span class="blog-date">Mar 13, 2026</span>
+        </div>
+        <h2>The New Frontier of Citizen Science</h2>
+        <p class="blog-author">by Hamd Minullah</p>
+        <p class="blog-excerpt">Ordinary people are helping solve extraordinary scientific problems. Discover how citizen science is democratizing research and opening new frontiers of knowledge.</p>
+        <div class="blog-actions">
+          <a href="assets/blogs/citizen-science-hamd-minullah.docx" download class="blog-view-btn">Download</a>
+        </div>
+      </article>
+
     </section>
   </main>
-  
+
   <footer class="footer">
     <div class="footer-container">
-
       <div class="footer-brand">
         <h3>STEMxFuture</h3>
         <p>Empowering students through accessible STEM education and volunteering opportunities.</p>
       </div>
-
       <div class="footer-links">
         <h4>Quick Links</h4>
         <a href="index.html">Home</a>
         <a href="blog.html">Blog</a>
         <a href="volunteer.html">Volunteer</a>
       </div>
-
       <div class="footer-contact">
         <h4>Contact</h4>
         <p>Email: stemxfuture@gmail.com</p>
       </div>
-
       <div class="footer-social">
- 	      <h4>Follow Us</h4>
-  	    <div class="social-icons">
-    
-  	      <a href="https://www.linkedin.com/company/stemxfuture/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/stemxfuture/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.07c.65-1.23 2.25-2.52 4.63-2.52 4.95 0 5.86 3.26 5.86 7.5V24h-5v-7.8c0-1.86-.03-4.26-2.6-4.26-2.6 0-3 2.03-3 4.12V24h-5V8z"/>
             </svg>
           </a>
-
           <a href="https://www.instagram.com/stemxfuture?igsh=MW9maHR1OW1obGNiMw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm8.25 3a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/>
@@ -107,23 +333,12 @@
         </div>
       </div>
     </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 STEMxFuture. All rights reserved.</p>
-  </div>
+    <div class="footer-bottom">
+      <p>© 2026 STEMxFuture. All rights reserved.</p>
+    </div>
   </footer>
 
-
-  <script src="js/main.js">
-    const links = document.querySelectorAll(".nav-menu a");
-    const currentPage = window.location.pathname.split("/").pop();
-
-    links.forEach(link => {
-      if (link.getAttribute("href") === currentPage) {
-        link.classList.add("active");
-     }
-    });
-  </script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
