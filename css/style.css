@@ -1100,6 +1100,91 @@ nav a:not(.logo-wrapper):hover::after { width: 100%; }
   margin-bottom: 80px;
 }
 
+.contributor-totals {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+.contributor-total-card {
+  background: linear-gradient(135deg, #0b3c5d 0%, #1a6fa3 100%);
+  border-radius: 16px;
+  padding: 28px 48px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.total-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+}
+
+.total-label {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.8);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contributor-stats {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.contributor-stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 40px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(11, 60, 93, 0.07);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 160px;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contributor-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(11, 60, 93, 0.13);
+}
+
+.stat-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0b3c5d;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-country {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #334155;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
