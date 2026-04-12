@@ -974,7 +974,6 @@ nav a:not(.logo-wrapper):hover::after { width: 100%; }
 .papers-section {
   margin-top: 70px;
   padding-top: 50px;
-  border-top: 2px solid #e2e8f0;
 }
 
 .papers-header {
